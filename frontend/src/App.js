@@ -11,7 +11,11 @@ function App() {
           <BrowserRouter>
           <Header />
           <SidebarMenu />
-          
+          <Routes>
+            <Route>
+              
+            </Route>
+          </Routes>
           </BrowserRouter>
           
           </div>
