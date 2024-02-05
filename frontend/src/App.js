@@ -1,13 +1,18 @@
- import './App.css';
+import './App.css';
 import Header from './components/Header/Header';
-
+import SidebarMenu from './components/SidebarMenu/SidebarMenu';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
 
    
-        <div className="app">
+        <div>
+          <BrowserRouter>
           <Header />
+          <SidebarMenu />
+          
+          </BrowserRouter>
           
           </div>
 
