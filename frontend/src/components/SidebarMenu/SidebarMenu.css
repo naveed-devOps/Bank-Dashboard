@@ -1,230 +1,61 @@
-.box {
-    height: 1184px;
-    position: relative;
-    width: 250px;
+
+  /* Sidebar  */
+  #sidebar {
+    grid-area: sidebar;
+    height: 100%;
+    background-color: #263043;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
   }
   
-  .box .sidebar-menu {
-    height: 1184px;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 250px;
+  .sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px 0px 30px;
+    margin-bottom: 30px;
   }
   
-  .box .group {
-    height: 554px;
-    left: 0;
-    position: absolute;
-    top: 114px;
-    width: 227px;
+  .sidebar-title > span {
+    display: none;
   }
   
-  .box .service {
-    height: 25px;
-    left: 43px;
-    position: absolute;
-    top: 401px;
-    width: 25px;
+  .sidebar-brand {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
   }
   
-  .box .settings-solid {
-    height: 25px;
-    left: 41px;
-    position: absolute;
-    top: 529px;
-    width: 25px;
+  .sidebar-list {
+    padding: 0;
+    list-style-type: none;
   }
   
-  .box .credit-card {
-    height: 26px;
-    left: 43px;
-    position: absolute;
-    top: 273px;
-    width: 26px;
-  }
-  
-  .box .economic-investment {
-    height: 25px;
-    left: 44px;
-    position: absolute;
-    top: 209px;
-    width: 25px;
-  }
-  
-  .box .transfer {
-    height: 25px;
-    left: 44px;
-    position: absolute;
-    top: 81px;
-    width: 25px;
-  }
-  
-  .box .loan {
-    height: 25px;
-    left: 43px;
-    position: absolute;
-    top: 338px;
-    width: 25px;
-  }
-  
-  .box .text-wrapper {
-    color: #b1b1b1;
-    font-family: var(--heading-three-medium-18p-font-family);
-    font-size: var(--heading-three-medium-18p-font-size);
-    font-style: var(--heading-three-medium-18p-font-style);
-    font-weight: var(--heading-three-medium-18p-font-weight);
-    left: 95px;
-    letter-spacing: var(--heading-three-medium-18p-letter-spacing);
-    line-height: var(--heading-three-medium-18p-line-height);
-    position: absolute;
-    top: 83px;
-  }
-  
-  .box .div {
-    color: #b1b1b1;
-    font-family: "Inter-Medium", Helvetica;
+  .sidebar-list-item {
+    padding: 20px 20px 20px 20px;
     font-size: 18px;
-    font-weight: 500;
-    left: 95px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 147px;
   }
   
-  .box .text-wrapper-2 {
-    color: #b1b1b1;
-    font-family: "Inter-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 95px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 211px;
+  .sidebar-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
   }
   
-  .box .text-wrapper-3 {
-    color: #b1b1b1;
-    font-family: "Inter-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 95px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 275px;
+  .sidebar-list-item > a {
+    text-decoration: none;
+    color: #9e9ea4;
   }
   
-  .box .text-wrapper-4 {
-    color: #b1b1b1;
-    font-family: "Inter-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 95px;
-    letter-spacing: 0;
-    line-height: normal;
+  .sidebar-responsive {
+    display: inline !important;
     position: absolute;
-    top: 339px;
+    /*
+      we want the z-index of the sidebar higher so that
+      the charts are not showing over the sidebar 
+      on small screens
+    */
+    z-index: 12 !important;
   }
   
-  .box .text-wrapper-5 {
-    color: #b1b1b1;
-    font-family: "Inter-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 95px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 403px;
-  }
-  
-  .box .text-wrapper-6 {
-    color: #b1b1b1;
-    font-family: "Inter-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 95px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 467px;
-  }
-  
-  .box .text-wrapper-7 {
-    color: #b1b1b1;
-    font-family: "Inter-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 95px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 531px;
-  }
-  
-  .box .user {
-    height: 25px;
-    left: 44px;
-    position: absolute;
-    top: 146px;
-    width: 25px;
-  }
-  
-  .box .econometrics {
-    height: 25px;
-    left: 43px;
-    position: absolute;
-    top: 465px;
-    width: 25px;
-  }
-  
-  .box .group-2 {
-    height: 60px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 191px;
-  }
-  
-  .box .home {
-    height: 25px;
-    left: 44px;
-    position: absolute;
-    top: 17px;
-    width: 25px;
-  }
-  
-  .box .text-wrapper-8 {
-    color: var(--primary-3);
-    font-family: "Inter-Medium", Helvetica;
-    font-size: 18px;
-    font-weight: 500;
-    left: 95px;
-    letter-spacing: 0;
-    line-height: normal;
-    position: absolute;
-    top: 19px;
-  }
-  
-  .box .rectangle {
-    background-color: var(--primary-3);
-    border-radius: 0px 10px 10px 0px;
-    height: 60px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 6px;
-  }
-  
-  .box .rectangle-2 {
-    background-color: #e6eff5;
-    height: 1184px;
-    left: 249px;
-    position: absolute;
-    top: 0;
-    width: 1px;
-  }
-  
+  /* End Sidebar  */
